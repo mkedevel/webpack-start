@@ -8,13 +8,27 @@ const PATHS = {
 
 module.exports = {
 	entry: PATHS.sourсe + '/index.js',
+
 	output: {
 		path: PATHS.build,
 		filename: '[name].js'
 	},
+
 	plugins: [
 		new HtmlWebpackPlugin({
-			title: 'Webpack app'
+			template: PATHS.sourсe + '/index.pug',
 		})
-	]
+	],
+
+	module: {
+		rules: [
+			{
+				test: /\.pug$/,
+				loader: 'pug-loader',
+				options: {
+					pretty: true
+				}
+			}
+		]
+	}
 };
