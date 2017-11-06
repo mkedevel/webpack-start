@@ -7,16 +7,26 @@ const PATHS = {
 };
 
 module.exports = {
-	entry: PATHS.sourсe + '/index.js',
+	entry: {
+		'index': PATHS.sourсe + '/pages/index/index.js',
+		'example': PATHS.sourсe + '/pages/example/example.js',
+	},
 
 	output: {
 		path: PATHS.build,
-		filename: '[name].js'
+		filename: './js/[name].js'
 	},
 
 	plugins: [
 		new HtmlWebpackPlugin({
-			template: PATHS.sourсe + '/index.pug',
+			filename: 'index.html',
+			chunks: ['index'],
+			template: PATHS.sourсe + '/pages/index/index.pug',
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'example.html',
+			chunks: ['example'],
+			template: PATHS.sourсe + '/pages/example/example.pug',
 		})
 	],
 
