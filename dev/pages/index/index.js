@@ -6,6 +6,3 @@ var menu = createMenu(['Главная','Обо мне','Портфолио'], '
 document.body.appendChild(menu);
 
 console.log('in index.js');
-
-let test = (a,b) => a*b;
-console.log(test(3,2));

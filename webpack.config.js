@@ -37,13 +37,13 @@ const common = merge([
 				chunks: ['index', 'common'],
 				template: PATHS.sourсe + '/pages/index/index.pug',
 			}),
-
+/*
 			new HtmlWebpackPlugin({
 				filename: 'example.html',
 				chunks: ['example', 'common'],
 				template: PATHS.sourсe + '/pages/example/example.pug',
 			}),
-
+*/
 			new webpack.optimize.CommonsChunkPlugin({
 				name: 'common',
 			}),
@@ -69,7 +69,7 @@ module.exports = function(env) {
 		return merge([
 			common,
 			extractCSS(),
-			//uglifyJS(),
+			//uglifyJS(), // minify JS
 		]);
 	}
 

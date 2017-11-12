@@ -22,11 +22,6 @@ document.body.appendChild(menu);
 
 console.log('in index.js');
 
-var test = function test(a, b) {
-  return a * b;
-};
-console.log(test(3, 2));
-
 /***/ }),
 /* 3 */,
 /* 4 */

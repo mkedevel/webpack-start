@@ -160,7 +160,7 @@ Object.defineProperty(exports, "__esModule", {
 
 exports.default = function (array, className) {
 	var menu = document.createElement('ul');
-	menu.сlassName = className;
+	menu.className = className;
 
 	var listItems = '';
 
