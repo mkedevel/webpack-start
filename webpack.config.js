@@ -9,11 +9,12 @@ const css = require('./webpack/css');
 const extractCSS = require('./webpack/css.extract');
 const uglifyJS = require('./webpack/js.uglify');
 const images = require('./webpack/images');
+const fonts = require('./webpack/fonts');
 const babel = require('./webpack/babel');
 
 const PATHS = {
 	sourсe: path.join(__dirname, 'dev'),
-	build: path.join(__dirname, 'build')
+	build: path.join(__dirname, 'dist')
 };
 
 const common = merge([
@@ -57,6 +58,7 @@ const common = merge([
 
 	pug(),
 	images(),
+	fonts(),
 	babel(),
 
 ]);

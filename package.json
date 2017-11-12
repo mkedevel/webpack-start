@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack-dev-server --env development",
     "build": "webpack --env production",
-    "serv": "static build"
+    "serv": "static dist"
   },
   "devDependencies": {
     "css-loader": "^0.28.7",
