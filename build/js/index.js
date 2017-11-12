@@ -1,1 +1,38 @@
-webpackJsonp([0],[,,function(e,n,o){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var c=o(0),t=o(4),d=(o.n(t),o(1)),i=(o.n(d),Object(c.a)(["Главная","Обо мне","Портфолио"],"nav-menu"));document.body.appendChild(i),console.log("in index.js")},,function(e,n){}],[2]);
+webpackJsonp([0],[
+/* 0 */,
+/* 1 */,
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _menu = __webpack_require__(0);
+
+var _menu2 = _interopRequireDefault(_menu);
+
+__webpack_require__(4);
+
+__webpack_require__(1);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var menu = (0, _menu2.default)(['Главная', 'Обо мне', 'Портфолио'], 'nav-menu');
+document.body.appendChild(menu);
+
+console.log('in index.js');
+
+var test = function test(a, b) {
+  return a * b;
+};
+console.log(test(3, 2));
+
+/***/ }),
+/* 3 */,
+/* 4 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ })
+],[2]);
