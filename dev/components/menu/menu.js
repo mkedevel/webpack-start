@@ -1,4 +1,4 @@
-import './menu.scss';
+import './styles/menu.scss';
 
 export default function (array, className) {
 	var menu = document.createElement('ul');

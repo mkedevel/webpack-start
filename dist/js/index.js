@@ -1,4 +1,4 @@
-webpackJsonp([0],[
+webpackJsonp([1],[
 /* 0 */,
 /* 1 */,
 /* 2 */
@@ -7,13 +7,13 @@ webpackJsonp([0],[
 "use strict";
 
 
-var _menu = __webpack_require__(0);
+__webpack_require__(3);
+
+__webpack_require__(0);
+
+var _menu = __webpack_require__(1);
 
 var _menu2 = _interopRequireDefault(_menu);
-
-__webpack_require__(4);
-
-__webpack_require__(1);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -23,8 +23,7 @@ document.body.appendChild(menu);
 console.log('in index.js');
 
 /***/ }),
-/* 3 */,
-/* 4 */
+/* 3 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

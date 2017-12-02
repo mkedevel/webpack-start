@@ -1,8 +1,8 @@
-import createMenu from '../../components/menu/menu';
-import './index.scss';
+import '../styles/example.scss';
 import 'normalize.css';
+import createMenu from '../components/menu/menu';
 
 var menu = createMenu(['Главная','Обо мне','Портфолио'], 'nav-menu');
 document.body.appendChild(menu);
 
-console.log('in index.js');
+console.log('in example.js');
