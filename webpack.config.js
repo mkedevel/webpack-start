@@ -17,7 +17,7 @@ const babel = require('./webpack/babel');
 const json = require('./webpack/json-loader');
 
 const PATHS = {
-	sourсe: path.join(__dirname, 'dev'),
+	sourсe: path.join(__dirname, 'src'),
 	build: path.join(__dirname, 'build')
 };
 
