@@ -1,33 +1,34 @@
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const autoprefixer = require('autoprefixer');
 
-module.exports = function(paths) {
-
+module.exports = function () {
 	return {
 		module: {
 			rules: [
-			{
-				test: /\.scss$/,
-				include: paths,
-				use: ExtractTextPlugin.extract({
-					publicPath: '/',
-					fallback: 'style-loader',
-					use: ['css-loader', 'postcss-loader', 'sass-loader'],
-				}),
-			},
-			{
-				test: /\.css$/,
-				include: paths,
-				use: ExtractTextPlugin.extract({
-					fallback: 'style-loader',
-					use: ['css-loader', 'postcss-loader'],
-				}),
-			},
-			],
+				{
+					test: /\.(sa|sc|c)ss$/,
+					use: [
+						MiniCssExtractPlugin.loader,
+						{
+							loader: 'css-loader'
+						},
+						{
+							loader: 'postcss-loader',
+							options: {plugins: [autoprefixer]}
+						},
+						{
+							loader: 'sass-loader'
+						}
+					]
+				}
+			]
 		},
 
 		plugins: [
-			new ExtractTextPlugin('./assets/css/[name].css'),
-		],
+			new MiniCssExtractPlugin({
+				filename: './assets/css/[name].[hash].css',
+				chunkFilename: './assets/css/[id].[hash].css'
+			})
+		]
 	};
-
 };

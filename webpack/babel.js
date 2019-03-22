@@ -1,21 +1,20 @@
-module.exports = function (paths) {
+module.exports = function () {
 	return {
 		module: {
 			rules: [
 				{
-					test: /\.js$/,
+					test: /\.(js|jsx)$/,
 					exclude: /node_modules/,
-					//include: paths,
 					use: [
 						{
 							loader: 'babel-loader',
-							options: { 
-								presets: ['es2015'], 
+							options: {
+								cacheDirectory: true
 							}
 						}
 					]
 				}
 			]
 		}
-	}
+	};
 };

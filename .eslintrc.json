@@ -1,60 +1,39 @@
 {
     "env": {
         "browser": true,
-        "es6": true,
         "node": true
     },
-    "extends": "eslint:recommended",
-    "parserOptions": {
-        "ecmaVersion": 2015,
-        "sourceType": "module"
-    },
-    "rules": {
-        "indent": [
-            "error",
-            "tab"
-        ],
-        "linebreak-style": [
-            "error",
-            "windows"
-        ],
-        "quotes": [
-            "error",
-            "single"
-        ],
-        "semi": [
-            "error",
-            "always"
-        ],
-        "semi-spacing": ["error", {"before": false, "after": true}],
-        "no-console": 0,
-        "no-var": "error",
-        "no-else-return": ["error", {"allowElseIf": true}],
-        "no-multi-spaces": ["error", {"exceptions": {"Property": false}}],
-        "space-before-function-paren": ["error", {"named": "never", "anonymous": "always"}],
-        "space-unary-ops": [
-            2,
-            {
-                "words": true,
-                "nonwords": false,
-                "overrides": {
-                    "new": false,
-                    "++": false
-                }
-            }
-        ],
-        "space-infix-ops": "error",
-        "space-in-parens": ["error", "never"],
-        "space-before-blocks": "error",
-        "no-whitespace-before-property": "error",
-        "keyword-spacing": ["error", {"before": true}],
-        "object-curly-spacing": ["error", "never"],
-        "array-bracket-spacing": ["error", "never"],
-        "no-new": "error",
-        "no-new-object": "error",
-        "eqeqeq": "error",
-        "no-nested-ternary": "error"
-    },
     
+    "extends": [
+        "xo/esnext",
+        "xo-react",
+        "plugin:import/errors",
+        "plugin:import/warnings"
+    ],
+    
+    "plugins": [
+        "import"
+    ],
+    
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        }
+    },
+
+    "rules": {
+        "capitalized-comments": "off",
+        "lines-between-class-members": [
+            "error",
+            "always",
+            {"exceptAfterSingleLine": true}
+        ]
+    },
+
     "parser": "babel-eslint"
 }
