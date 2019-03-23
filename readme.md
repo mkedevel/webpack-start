@@ -1,4 +1,6 @@
 Webpack Build with React
+=============================
+
 <table align="center">
     <tr>
         <td>
@@ -25,7 +27,6 @@ Webpack Build with React
     </tr>
 </table>
 
-=============================
 ### Code style
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 
@@ -45,11 +46,11 @@ build:
 npm build or yarn build
 ```
 ### Plugins
-[mini-css-extract-plugin][mini-css]
-[html-webpack-plugin][html-plugin]
-[uglifyjs-webpack-plugin][uglifyjs-plugin]
-[mini-css-extract-plugin][mini-css-extract-plugin]
-[optimize-css-assets-webpack-plugin][optimize-css-assets-webpack-plugin]
+* [mini-css-extract-plugin][mini-css]
+* [html-webpack-plugin][html-plugin]
+* [uglifyjs-webpack-plugin][uglifyjs-plugin]
+* [mini-css-extract-plugin][mini-css-extract-plugin]
+* [optimize-css-assets-webpack-plugin][optimize-css-assets-webpack-plugin]
 
 [mini-css]: https://webpack.js.org/plugins/mini-css-extract-plugin
 [html-plugin]: https://webpack.js.org/plugins/html-webpack-plugin
@@ -58,15 +59,15 @@ npm build or yarn build
 [optimize-css-assets-webpack-plugin]: https://webpack.js.org/plugins/mini-css-extract-plugin/#minimizing-for-production
 
 ### Loaders
-[babel-loader][babel-loader-link]
-[css-loader][css-loader-link]
-[file-loader][file-loader-link]
-[json-loader][json-loader-link]
-[null-loader][null-loader-link]
-[postcss-loader][postcss-loader-link]
-[pug-loader][pug-loader-link]
-[sass-loader][sass-loader-link]
-[style-loader][style-loader-link]
+* [babel-loader][babel-loader-link]
+* [css-loader][css-loader-link]
+* [file-loader][file-loader-link]
+* [json-loader][json-loader-link]
+* [null-loader][null-loader-link]
+* [postcss-loader][postcss-loader-link]
+* [pug-loader][pug-loader-link]
+* [sass-loader][sass-loader-link]
+* [style-loader][style-loader-link]
 
 [babel-loader-link]: https://webpack.js.org/loaders/babel-loader
 [css-loader-link]: https://webpack.js.org/loaders/css-loader
@@ -77,3 +78,10 @@ npm build or yarn build
 [pug-loader-link]: https://github.com/pugjs/pug-loader
 [sass-loader-link]: https://webpack.js.org/loaders/sass-loader
 [style-loader-link]: https://webpack.js.org/loaders/style-loader
+
+### Production
+* normalize.css
+* autoprefixer
+* browserslist
+    last 2 version
+    &gt; 1%
