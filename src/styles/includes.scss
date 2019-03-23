@@ -1,7 +1,6 @@
 //==========================================================
 //                        include Settings APP
 //==========================================================
-@import 'include/variables';
-@import 'include/base';
-@import 'include/media';
-@import 'include/mymixins';
+// @import 'include/variables'; // variables
+// @import 'include/media'; // media queries
+@import 'include/mixins'; // mixins

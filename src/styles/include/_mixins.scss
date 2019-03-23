@@ -1,7 +1,3 @@
-//==========================================================
-//                        MY MIXINS
-//==========================================================
-
 @mixin box-sizing {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -20,27 +16,11 @@
     transform: $transform;
 }
 
-@mixin filter($filter) {
-    -webkit-filter: $filter;
-    filter: $filter;
-}
-
 @mixin drop-shadow($drop-shadow) {
     -webkit-filter: drop-shadow($drop-shadow);
     filter: drop-shadow($drop-shadow);
 }
 
-
-// functions #############################################################
-@function black($opacity) {
-    @return rgba(0, 0, 0, $opacity);
-}
-
-@function white($opacity) {
-    @return rgba(255, 255, 255, $opacity);
-}
-
-// center vertically and/or horizontally an absolute positioned element
 @mixin center($xy:xy) {
     @if $xy==xy {
         left: 50%;

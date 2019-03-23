@@ -2,14 +2,18 @@
 import 'normalize.css';
 import './styles/fonts.scss';
 import './styles/index.scss';
-
-import Menu from './components/menu/menu'; // test
 /* import end */
 
 /* DOM loaded */
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', () => {
 	console.log('DOM loaded, in index.js');
-	let menu = new Menu(['home', 'about us', 'feedback'], 'css-menu-class')
-	let body = document.body;
-	body.appendChild(menu);
+
+	const helloWorld = (`
+		<div class="hello-world">
+			<h1>Hello World!</h1>
+			<p>Webpack 4 + React 16</p>
+		</div>
+	`).trim();
+
+	document.body.innerHTML = helloWorld;
 });

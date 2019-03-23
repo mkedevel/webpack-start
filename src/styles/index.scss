@@ -1,21 +1,12 @@
 @import 'includes.scss';
-@import 'include/components';
 
-.header {
-	height: 50px;
-	background: $gray-light;
+body {
+	background: #eee;
 }
 
-.main {
-	min-height: 100%;
-	padding: 50px 0 40px;
-	background:$white;
-	box-sizing: border-box;
-}
-
-.footer {
-	height: 40px;
-	margin-top: -40px;
-	box-sizing: border-box;
-	background: $gray-light;
+.hello-world {
+	text-align: center;
+	padding: 50px 20px;
+	font-size: 2em;
+	font-family: 'Roboto Regular';
 }
