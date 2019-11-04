@@ -28,7 +28,7 @@ const common = function (env) {
 			devtool: (env === 'production') ? 'source-map' : 'eval',
 
 			entry: {
-				index: PATHS.sourсe + '/app.js',
+				index: PATHS.sourсe + '/index.js'
 			},
 
 			output: {
@@ -75,7 +75,7 @@ module.exports = function (env) {
 		return merge([
 			common(env),
 			extractCSS(),
-			uglifyJS() // минификация и оптимизация
+			uglifyJS()
 		]);
 	}
 

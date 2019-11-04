@@ -5,7 +5,7 @@
     "email": "resetus@gmail.com",
     "url": "https://github.com/resetus"
   },
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
