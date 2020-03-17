@@ -1,15 +1,15 @@
 import React from 'react';
-// import './styles/app.scss';
+import './styles/app.scss';
 
 export default function App() {
 	const toolings = [
-		{name: 'webpack', src: '//cdn.worldvectorlogo.com/logos/webpack-icon.svg'},
-		{name: 'babel', src: '//cdn.worldvectorlogo.com/logos/babel-10.svg'},
-		{name: 'react', src: '//cdn.worldvectorlogo.com/logos/react.svg'},
-		{name: 'css3', src: '//cdn.worldvectorlogo.com/logos/css-3.svg'},
-		{name: 'sass, scss', src: '//cdn.worldvectorlogo.com/logos/sass-1.svg'},
-		{name: 'html5', src: '//cdn.worldvectorlogo.com/logos/html5.svg'},
-		{name: 'pug', src: '//cdn.worldvectorlogo.com/logos/pug.svg'}
+		{name: 'webpack', src: 'https://cdn.worldvectorlogo.com/logos/webpack-icon.svg'},
+		{name: 'babel', src: 'https://cdn.worldvectorlogo.com/logos/babel-10.svg'},
+		{name: 'react', src: 'https://cdn.worldvectorlogo.com/logos/react.svg'},
+		{name: 'css3', src: 'https://cdn.worldvectorlogo.com/logos/css-3.svg'},
+		{name: 'sass, scss', src: 'https://cdn.worldvectorlogo.com/logos/sass-1.svg'},
+		{name: 'html5', src: 'https://cdn.worldvectorlogo.com/logos/html5.svg'},
+		{name: 'pug', src: 'https://cdn.worldvectorlogo.com/logos/pug.svg'}
 	];
 
 	return (
