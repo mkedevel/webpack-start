@@ -1,8 +1,9 @@
-module.exports = function () {
-	return {
-		devServer: {
-			stats: 'errors-only',
-			port: 3000
-		}
+const path = require('path');
+
+module.exports = () => ({
+	devServer: {
+		contentBase: path.join(__dirname, 'dist'),
+		compress: true,
+		port: 3000
 	}
-};
+});

@@ -1,13 +1,24 @@
-module.exports = function (paths) {
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const autoprefixer = require('autoprefixer');
+
+module.exports = function () {
 	return {
 		module: {
 			rules: [
 				{
-					test: /\.css$/,
-					include: paths,
+					test: /\.(sa|sc|c)ss$/,
 					use: [
-						'style-loader',
-						'css-loader'
+						MiniCssExtractPlugin.loader,
+						{
+							loader: 'css-loader'
+						},
+						{
+							loader: 'postcss-loader',
+							options: {plugins: [autoprefixer]}
+						},
+						{
+							loader: 'sass-loader'
+						}
 					]
 				}
 			]

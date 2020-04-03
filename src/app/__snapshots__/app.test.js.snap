@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> renders correctly 1`] = `
+<div
+  className="app"
+>
+  <h1>
+    Webpack Build with React 16.13.0
+  </h1>
+  <p>
+    Hi, this small build on webpack 4 will help create any front-end application
+  </p>
+  <h2>
+    Tools
+  </h2>
+  <ul
+    className="app-tools"
+  >
+    <li
+      className="app-tools__item"
+    >
+      <img
+        src="https://cdn.worldvectorlogo.com/logos/webpack-icon.svg"
+        title="webpack"
+      />
+    </li>
+    <li
+      className="app-tools__item"
+    >
+      <img
+        src="https://cdn.worldvectorlogo.com/logos/babel-10.svg"
+        title="babel"
+      />
+    </li>
+    <li
+      className="app-tools__item"
+    >
+      <img
+        src="https://cdn.worldvectorlogo.com/logos/react.svg"
+        title="react"
+      />
+    </li>
+    <li
+      className="app-tools__item"
+    >
+      <img
+        src="https://cdn.worldvectorlogo.com/logos/sass-1.svg"
+        title="sass, scss"
+      />
+    </li>
+    <li
+      className="app-tools__item"
+    >
+      <img
+        src="https://cdn.worldvectorlogo.com/logos/css-3.svg"
+        title="css3"
+      />
+    </li>
+    <li
+      className="app-tools__item"
+    >
+      <img
+        src="https://cdn.worldvectorlogo.com/logos/html5.svg"
+        title="html5"
+      />
+    </li>
+  </ul>
+  <ul
+    className="app-contacts"
+  >
+    <li>
+      github: 
+      <a
+        href="//github.com/resetus/webpack-start"
+      >
+        webpack-start
+      </a>
+    </li>
+    <li>
+      author: 
+      <a
+        href="//github.com/resetus"
+      >
+        resetus
+      </a>
+    </li>
+  </ul>
+</div>
+`;

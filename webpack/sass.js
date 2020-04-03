@@ -1,11 +1,11 @@
 const autoprefixer = require('autoprefixer');
 
-module.exports = function () {
+module.exports = () => {
 	return {
 		module: {
 			rules: [
 				{
-					test: /\.(sa|sc)ss$/,
+					test: /\.s[ac]ss$/i,
 					use: [
 						'style-loader',
 						'css-loader',
