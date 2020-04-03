@@ -13,16 +13,13 @@ Webpack Build with React
             <img width="48" height="48" title="react" src="https://cdn.worldvectorlogo.com/logos/react.svg">
         </td>
         <td>
-            <img width="48" height="48" title="css3" src="https://cdn.worldvectorlogo.com/logos/css-3.svg">
-        </td>
-        <td>
             <img width="48" height="48" title="sass, scss" src="https://cdn.worldvectorlogo.com/logos/sass-1.svg">
         </td>
         <td>
-            <img width="48" height="48" title="html5" src="https://cdn.worldvectorlogo.com/logos/html5.svg">
+            <img width="48" height="48" title="css3" src="https://cdn.worldvectorlogo.com/logos/css-3.svg">
         </td>
         <td>
-            <img width="48" height="48" title="pug" src="https://cdn.worldvectorlogo.com/logos/pug.svg">
+            <img width="48" height="48" title="html5" src="https://cdn.worldvectorlogo.com/logos/html5.svg">
         </td>
     </tr>
 </table>
@@ -36,7 +33,7 @@ Install:
 npm install or yarn install
 ```
 
-### Quick start
+### Scripts
 develop:
 ```bash
 npm start or yarn start
@@ -45,42 +42,46 @@ build:
 ```bash
 npm build or yarn build
 ```
-### Plugins
-* [mini-css-extract-plugin][mini-css]
-* [html-webpack-plugin][html-plugin]
-* [uglifyjs-webpack-plugin][uglifyjs-plugin]
-* [mini-css-extract-plugin][mini-css-extract-plugin]
-* [optimize-css-assets-webpack-plugin][optimize-css-assets-webpack-plugin]
+test:
+```bash
+npm test or yarn test
+```
 
-[mini-css]: https://webpack.js.org/plugins/mini-css-extract-plugin
+### Plugins
+* [mini-css-extract-plugin][mini-css-extract-plugin]
+* [html-webpack-plugin][html-plugin]
+* [clean-webpack-plugin][clean-webpack]
+
 [html-plugin]: https://webpack.js.org/plugins/html-webpack-plugin
-[uglifyjs-plugin]: https://webpack.js.org/plugins/uglifyjs-webpack-plugin
 [mini-css-extract-plugin]: https://webpack.js.org/plugins/mini-css-extract-plugin
-[optimize-css-assets-webpack-plugin]: https://webpack.js.org/plugins/mini-css-extract-plugin/#minimizing-for-production
+[clean-webpack]: https://webpack.js.org/guides/output-management/
 
 ### Loaders
 * [babel-loader][babel-loader-link]
 * [css-loader][css-loader-link]
-* [file-loader][file-loader-link]
-* [json-loader][json-loader-link]
-* [null-loader][null-loader-link]
 * [postcss-loader][postcss-loader-link]
-* [pug-loader][pug-loader-link]
 * [sass-loader][sass-loader-link]
 * [style-loader][style-loader-link]
 
 [babel-loader-link]: https://webpack.js.org/loaders/babel-loader
 [css-loader-link]: https://webpack.js.org/loaders/css-loader
-[file-loader-link]: https://webpack.js.org/loaders/file-loader
-[json-loader-link]: https://webpack.js.org/loaders/json-loader
-[null-loader-link]: https://webpack.js.org/loaders/null-loader
 [postcss-loader-link]: https://webpack.js.org/loaders/postcss-loader
-[pug-loader-link]: https://github.com/pugjs/pug-loader
 [sass-loader-link]: https://webpack.js.org/loaders/sass-loader
 [style-loader-link]: https://webpack.js.org/loaders/style-loader
 
+### Test
+* [enzyme][enzyme]
+* [enzyme-adapter-react-16][enzyme-adapter]
+* [jest][jest]
+* [react-test-renderer][react-test-renderer]
+
+[enzyme]: https://enzymejs.github.io/enzyme/
+[enzyme-adapter]: https://enzymejs.github.io/enzyme/docs/installation/react-16.html
+[jest]: https://jestjs.io/docs/en/getting-started
+[react-test-renderer]: https://ru.reactjs.org/docs/test-renderer.html
+
 ### Production
-* normalize.css
+* React *16
 * autoprefixer
 * browserslist
     last 2 version
