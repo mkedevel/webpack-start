@@ -2,6 +2,8 @@ const merge = require('webpack-merge');
 const path = require('path');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 const babel = require('./webpack/babel');
 
 module.exports = merge(
@@ -12,11 +14,15 @@ module.exports = merge(
 		plugins: [
 			new CleanWebpackPlugin(),
 			new HtmlWebpackPlugin({
-				title: 'Production'
+				title: 'Webpack Build with React 16.13.0'
+			}),
+			new MiniCssExtractPlugin({
+				filename: './assets/[name].css',
+				chunkFilename: './assets/[id].css'
 			})
 		],
 		output: {
-			filename: '[name].bundle.js',
+			filename: 'assets/[name].js',
 			path: path.resolve(__dirname, 'dist')
 		}
 	},
