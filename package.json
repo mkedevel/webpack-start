@@ -1,14 +1,14 @@
 {
-  "name": "router",
-  "version": "2.0.0",
+  "name": "webpack-start-app",
+  "version": "2.1.0",
   "private": true,
   "author": {
     "name": "Konstantin Mezhuritskiy",
-    "email": "resetus@gmail.com",
+    "email": "mkedevel@gmail.com",
     "url": "https://github.com/resetus"
   },
   "scripts": {
-    "eslint": "yarn eslint",
+    "eslint": "eslint --fix",
     "test": "jest --watch --config jest.config.js",
     "start": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
