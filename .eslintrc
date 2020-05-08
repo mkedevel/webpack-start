@@ -34,7 +34,9 @@
             "error",
             "always",
             {"exceptAfterSingleLine": true}
-        ]
+        ],
+        "react/function-component-definition": "off",
+        "default-param-last": "off"
     },
 
     "parser": "babel-eslint"
