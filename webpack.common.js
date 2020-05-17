@@ -8,9 +8,10 @@ const babel = require('./webpack/babel');
 
 module.exports = merge(
 	{
-		entry: {
-			app: './src/index.js'
-		},
+		entry: [
+			'@babel/polyfill',
+			'./src/index.js'
+		],
 		plugins: [
 			new CleanWebpackPlugin(),
 			new HtmlWebpackPlugin({
