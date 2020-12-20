@@ -1,4 +1,4 @@
-Webpack Build with React
+Webpack 4 Start App
 =============================
 
 <table align="center">
